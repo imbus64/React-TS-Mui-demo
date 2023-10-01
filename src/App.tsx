@@ -17,16 +17,6 @@ function Prime({ prime }: { prime: boolean }): JSX.Element {
   return prime === true ? <p>Prime</p> : <p>Not Prime</p>
 }
 
-// Just a helper function to check if a number is prime
-function IsPrime(int: number): boolean {
-  if (int < 2 || int % 2 === 0) return false
-
-  for (let i = 3; i <= Math.sqrt(int); i += 2) {
-    if (int % i === 0) return false
-  }
-  return true
-}
-
 // JSX.Element is the return type of every React component
 function App(): JSX.Element {
   const [count, setCount] = useState(0)
@@ -57,6 +47,16 @@ function App(): JSX.Element {
       </Box>
     </>
   )
+}
+
+// Just a helper function to check if a number is prime
+function IsPrime(int: number): boolean {
+  if (int < 2 || int % 2 === 0) return false
+
+  for (let i = 3; i <= Math.sqrt(int); i += 2) {
+    if (int % i === 0) return false
+  }
+  return true
 }
 
 export default App

@@ -1,1 +1,1 @@
-Typescript react and MUI [demo](src/App.tsx)
+Typescript react and MUI demo: [➡️ The actual interesting parts ⬅️](src/App.tsx)
